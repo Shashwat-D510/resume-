@@ -1,7 +1,15 @@
 {
-    "functions": {
-      "api/generate_resume.py": {
-        "runtime": "vercel-python@3.10"
-      }
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/generate_resume.py",
+      "use": "@vercel/python"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/api/generate_resume",
+      "dest": "api/generate_resume.py"
+    }
+  ]
+}
