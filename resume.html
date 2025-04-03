@@ -100,7 +100,7 @@
                 $("#submitbtn").prop("disabled", true); // Disable button
     
                 $.ajax({
-                    url: 'https://resume-eight-lemon.vercel.app/api/generate_resume.py',
+                    url: 'https://resume-eight-lemon.vercel.app/api/generate_resume',
                     type: 'POST',
                     contentType: 'application/json',
                     data: JSON.stringify({
