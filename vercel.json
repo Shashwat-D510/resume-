@@ -1,0 +1,7 @@
+{
+    "functions": {
+      "api/generate_resume.py": {
+        "runtime": "vercel-python@3.10"
+      }
+    }
+  }
